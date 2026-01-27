@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 
 // Import background image - replace with your own
-import hero1 from "@/assets/hero-1.jpg";
+import hero1 from "./ahuthor-image.jpeg";
 
 const FinalCTA = () => {
   const ref = useRef(null);

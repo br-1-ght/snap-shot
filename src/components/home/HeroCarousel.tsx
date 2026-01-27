@@ -17,17 +17,17 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: hero1, // Replace with your image
+    image: hero1,
     title: "Capturing Life's Beauty, One Frame at a Time.",
     subtitle: "Timeless portraits that capture life",
   },
   {
-    image: hero2, // Replace with your image
+    image: hero2,
     title: "Framing Your Story, One Shot at a Time.",
     subtitle: "Timeless portraits that capture life",
   },
   {
-    image: hero3, // Replace with your image
+    image: hero3,
     title: "Creating Memories That Last Forever.",
     subtitle: "Professional photography for every occasion",
   },
