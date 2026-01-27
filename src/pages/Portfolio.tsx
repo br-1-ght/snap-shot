@@ -5,15 +5,15 @@ import Footer from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
 
 // Import gallery images - replace with your own
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
-import gallery8 from "@/assets/gallery-8.jpg";
-import gallery9 from "@/assets/gallery-9.jpg";
+import gallery1 from "./gallery/gallery-images/Portrait.jpeg";
+import gallery2 from "./gallery/gallery-images/family.jpeg";
+import gallery3 from "./gallery/gallery-images/fashion-2.jpeg";
+import gallery4 from "./gallery/gallery-images/fashion.jpeg";
+import gallery5 from "./gallery/gallery-images/wedding.jpeg";
+// import gallery6 from "@/assets/gallery-6.jpg";
+// import gallery7 from "@/assets/gallery-7.jpg";
+// import gallery8 from "@/assets/gallery-8.jpg";
+// import gallery9 from "@/assets/gallery-9.jpg";
 import portfolioHero from "@/assets/portfolio-hero.jpg";
 
 type Category = "all" | "portrait" | "wedding" | "fashion" | "events";
@@ -26,15 +26,15 @@ interface GalleryItem {
 
 // Replace these images with your own
 const galleryItems: GalleryItem[] = [
-  { src: gallery1, alt: "Portrait photography", category: "portrait" },
-  { src: gallery2, alt: "Fashion photography", category: "fashion" },
-  { src: gallery3, alt: "Maternity photography", category: "portrait" },
-  { src: gallery4, alt: "Couple photography", category: "wedding" },
-  { src: gallery5, alt: "Studio portrait", category: "portrait" },
-  { src: gallery6, alt: "Family photography", category: "events" },
-  { src: gallery7, alt: "Event photography", category: "events" },
-  { src: gallery8, alt: "Corporate headshot", category: "portrait" },
-  { src: gallery9, alt: "Artistic portrait", category: "fashion" },
+  { src: gallery1, alt: "Studio portrait", category: "portrait" },
+  { src: gallery2, alt: "Family photography", category: "events" },
+  { src: gallery3, alt: "Fashion photography", category: "fashion" },
+  { src: gallery4, alt: "Fashion photography", category: "fashion" },
+  { src: gallery5, alt: "Wedding photography", category: "wedding" },
+  // { src: gallery6, alt: "Family photography", category: "events" },
+  // { src: gallery7, alt: "Event photography", category: "events" },
+  // { src: gallery8, alt: "Corporate headshot", category: "portrait" },
+  // { src: gallery9, alt: "Artistic portrait", category: "fashion" },
 ];
 
 const categories: { value: Category; label: string }[] = [

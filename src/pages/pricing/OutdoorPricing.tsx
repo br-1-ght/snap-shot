@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
-import hero2 from "@/assets/hero-2.jpg";
+import hero2 from "../pages-images/outdoor-image.webp";
 
 interface PricingPackage {
   name: string;
@@ -17,50 +17,38 @@ interface PricingPackage {
 
 const packages: PricingPackage[] = [
   {
-    name: "Essential",
-    price: "₦75,000",
-    duration: "2 Hour Session",
+    name: "Bronze",
+    price: "₦60,000",
+    duration: "1 Hour Session",
     features: [
-      "15 Edited Digital Images",
-      "1-2 Locations",
-      "2 Outfit Changes",
-      "Basic Retouching",
+      "4 Edited Digital Images",
+      "1 Outfit Change",
+      "Basic Retouching (soft copy)",
       "Online Gallery Access",
-      "Print-Ready Files",
     ],
   },
   {
-    name: "Classic",
-    price: "₦150,000",
-    duration: "3 Hour Session",
+    name: "Silver",
+    price: "₦80,000",
+    duration: "2 Hour Session",
     features: [
-      "35 Edited Digital Images",
-      "2-3 Locations",
-      "4 Outfit Changes",
+      "6 Edited Digital Images (soft copy)",
+      "2 Outfit Changes",
       "Advanced Retouching",
       "Online Gallery Access",
-      "Print-Ready Files",
-      "Transportation Included",
-      "2 Printed Photos (8x10)",
     ],
     popular: true,
   },
   {
-    name: "Luxury",
-    price: "₦300,000",
-    duration: "Full Day Session",
+    name: "Gold",
+    price: "₦150,000",
+    duration: "3 Hour Session",
     features: [
-      "75+ Edited Digital Images",
-      "Multiple Locations",
-      "Unlimited Outfit Changes",
-      "Premium Retouching",
+      "10 Edited Digital Images (soft copy)",
+      "3 Outfit Changes",
+      "Advanced Retouching",
       "Online Gallery Access",
-      "Print-Ready Files",
-      "Transportation Included",
-      "Professional Styling",
-      "5 Printed Photos (8x10)",
-      "Photo Album (30 pages)",
-      "Behind-the-Scenes Video",
+      "A small Photo frame/Throwpillow (8x10)",
     ],
   },
 ];
@@ -139,7 +127,7 @@ const OutdoorPricing = () => {
                       variant={pkg.popular ? "default" : "outline"}
                     >
                       <a
-                        href="https://wa.me/2348101379235"
+                        href="https://wa.me/2348138220519"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -147,6 +135,47 @@ const OutdoorPricing = () => {
                       </a>
                     </Button>
                   </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Additional Services */}
+        <section className="section-padding bg-cream-dark">
+          <div className="container mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+                Extras
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
+                Additional Services
+              </h2>
+            </motion.div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              {[
+                { name: "Extra Outfit", price: "₦5,000", desc: "Per additional outfit change" },
+                { name: "Rush Editing", price: "₦10,000", desc: "48-hour delivery" },
+                { name: "Extra Images", price: "₦3,000", desc: "Per additional edited image" },
+                { name: "Print Package", price: "₦15,000", desc: "5 premium 8x10 prints" },
+              ].map((addon, index) => (
+                <motion.div
+                  key={addon.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="bg-card rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="font-serif font-bold text-foreground mb-1">{addon.name}</h3>
+                  <p className="text-2xl font-serif font-bold text-primary mb-2">{addon.price}</p>
+                  <p className="text-sm text-muted-foreground">{addon.desc}</p>
                 </motion.div>
               ))}
             </div>

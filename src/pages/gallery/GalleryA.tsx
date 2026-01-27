@@ -5,22 +5,22 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 // Import images - replace with your own
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
-import gallery8 from "@/assets/gallery-8.jpg";
+import gallery1 from "./gallery-images/Portrait.jpeg";
+// import gallery2 from "@/assets/gallery-2.jpg";
+// import gallery3 from "@/assets/gallery-3.jpg";
+// import gallery5 from "@/assets/gallery-5.jpg";
+// import gallery7 from "@/assets/gallery-7.jpg";
+// import gallery8 from "@/assets/gallery-8.jpg";
 import hero1 from "@/assets/hero-1.jpg";
 
 // Replace with your portrait images
 const portraits = [
   { src: gallery1, alt: "Portrait 1" },
-  { src: gallery2, alt: "Portrait 2" },
-  { src: gallery5, alt: "Portrait 3" },
-  { src: gallery7, alt: "Portrait 4" },
-  { src: gallery8, alt: "Portrait 5" },
-  { src: gallery3, alt: "Portrait 6" },
+  // { src: gallery2, alt: "Portrait 2" },
+  // { src: gallery5, alt: "Portrait 3" },
+  // { src: gallery7, alt: "Portrait 4" },
+  // { src: gallery8, alt: "Portrait 5" },
+  // { src: gallery3, alt: "Portrait 6" },
 ];
 
 const GalleryA = () => {
@@ -32,7 +32,7 @@ const GalleryA = () => {
         <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${hero1})` }}
+            style={{ backgroundImage: `url(${gallery1})` }}
           />
           <div className="absolute inset-0 hero-gradient" />
           <motion.div

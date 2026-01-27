@@ -5,21 +5,21 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 // Import images - replace with your own
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import gallery4 from "./gallery-images/wedding.jpeg";
+import gallery6 from "./gallery-images/family.jpeg";
 import hero2 from "@/assets/hero-2.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
+// import gallery1 from "@/assets/gallery-1.jpg";
+// import gallery3 from "@/assets/gallery-3.jpg";
+// import gallery5 from "@/assets/gallery-5.jpg";
 
 // Replace with your wedding/couple images
 const weddingPhotos = [
-  { src: hero2, alt: "Wedding 1" },
-  { src: gallery4, alt: "Couple 1" },
+  { src: gallery4, alt: "Wedding 1" },
+  // { src: gallery4, alt: "Couple 1" },
   { src: gallery6, alt: "Family 1" },
-  { src: gallery3, alt: "Wedding 2" },
-  { src: gallery1, alt: "Couple 2" },
-  { src: gallery5, alt: "Wedding 3" },
+  // { src: gallery3, alt: "Wedding 2" },
+  // { src: gallery1, alt: "Couple 2" },
+  // { src: gallery5, alt: "Wedding 3" },
 ];
 
 const GalleryB = () => {
@@ -31,7 +31,7 @@ const GalleryB = () => {
         <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${hero2})` }}
+            style={{ backgroundImage: `url(${gallery4})` }}
           />
           <div className="absolute inset-0 hero-gradient" />
           <motion.div
@@ -63,7 +63,7 @@ const GalleryB = () => {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-navy-dark/0 group-hover:bg-navy-dark/40 transition-colors duration-500" />
                 </motion.div>

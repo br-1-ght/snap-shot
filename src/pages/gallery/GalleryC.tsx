@@ -5,21 +5,21 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 // Import images - replace with your own
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery9 from "@/assets/gallery-9.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
-import gallery8 from "@/assets/gallery-8.jpg";
+import gallery2 from "./gallery-images/fashion.jpeg";
+import gallery5 from "./gallery-images/fashion-2.jpeg";
+// import gallery9 from "@/assets/gallery-9.jpg";
+// import hero3 from "@/assets/hero-3.jpg";
+// import gallery7 from "@/assets/gallery-7.jpg";
+// import gallery8 from "@/assets/gallery-8.jpg";
 
 // Replace with your fashion/editorial images
 const fashionPhotos = [
-  { src: hero3, alt: "Fashion 1" },
+  // { src: hero3, alt: "Fashion 1" },
   { src: gallery2, alt: "Fashion 2" },
-  { src: gallery9, alt: "Fashion 3" },
+  // { src: gallery9, alt: "Fashion 3" },
   { src: gallery5, alt: "Fashion 4" },
-  { src: gallery7, alt: "Fashion 5" },
-  { src: gallery8, alt: "Fashion 6" },
+  // { src: gallery7, alt: "Fashion 5" },
+  // { src: gallery8, alt: "Fashion 6" },
 ];
 
 const GalleryC = () => {
@@ -31,7 +31,7 @@ const GalleryC = () => {
         <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${hero3})` }}
+            style={{ backgroundImage: `url(${gallery2})` }}
           />
           <div className="absolute inset-0 hero-gradient" />
           <motion.div

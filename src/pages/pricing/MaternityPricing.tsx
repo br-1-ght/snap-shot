@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Check, Heart } from "lucide-react";
 
-import gallery3 from "@/assets/gallery-3.jpg";
+import gallery3 from "../pages-images/maternity-image.jpg";
 
 interface PricingPackage {
   name: string;
@@ -17,53 +17,42 @@ interface PricingPackage {
 
 const packages: PricingPackage[] = [
   {
-    name: "Bloom",
-    price: "₦80,000",
-    duration: "1.5 Hour Session",
+    name: "Baby Bump Bronze",
+    price: "₦50,000",
+    duration: "1 Hour Session",
     features: [
-      "15 Edited Digital Images",
-      "Studio or Outdoor Location",
-      "2 Outfit Changes",
+      "5 Edited Digital Images",
+      "1 Creative Outfit Concept",
       "Partner/Family Included",
       "Basic Retouching",
       "Online Gallery Access",
-      "Print-Ready Files",
     ],
   },
   {
-    name: "Radiance",
-    price: "₦150,000",
-    duration: "2.5 Hour Session",
+    name: "Baby Bump Silver",
+    price: "₦80,000",
+    duration: "2 Hour Session",
     features: [
-      "30 Edited Digital Images",
-      "Studio AND Outdoor Location",
-      "4 Outfit Changes",
+      "10 Edited Digital Images",
+      "2 Creative Outfit Concepts",
       "Partner/Family Included",
       "Advanced Retouching",
       "Online Gallery Access",
-      "Print-Ready Files",
-      "Professional Styling Tips",
-      "2 Printed Photos (8x10)",
     ],
     popular: true,
   },
   {
-    name: "Goddess",
-    price: "₦250,000",
-    duration: "4 Hour Session",
+    name: "Baby Bump Gold",
+    price: "₦150,000",
+    duration: "1 Hour Session",
     features: [
-      "50+ Edited Digital Images",
-      "Multiple Locations",
-      "Unlimited Outfit Changes",
+      "15 Edited Digital Images",
+      "2 Creative Outfit Concepts",
       "Partner/Family Included",
-      "Premium Retouching",
+      "Basic Retouching",
       "Online Gallery Access",
-      "Print-Ready Files",
-      "Professional Makeup & Hair",
-      "Maternity Gown Rental",
-      "5 Printed Photos (8x10)",
-      "Photo Album (25 pages)",
-      "Bump Cast Coordination",
+      "Professional Makeup",
+      "Short video clip OR A small frame (8x10)",
     ],
   },
 ];
@@ -76,7 +65,7 @@ const MaternityPricing = () => {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-contain bg-center"
             style={{ backgroundImage: `url(${gallery3})` }}
           />
           <div className="absolute inset-0 hero-gradient" />
@@ -168,7 +157,7 @@ const MaternityPricing = () => {
                       variant={pkg.popular ? "default" : "outline"}
                     >
                       <a
-                        href="https://wa.me/2348101379235"
+                        href="https://wa.me/2348138220519"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -182,39 +171,60 @@ const MaternityPricing = () => {
           </div>
         </section>
 
-        {/* Add-ons */}
-        <section className="py-16 bg-cream-dark">
-          <div className="container mx-auto px-6">
-            <h2 className="text-2xl font-serif font-bold text-foreground text-center mb-8">
-              Optional Add-ons
-            </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        {/* Additional Services */}
+        <section className="section-padding bg-background">
+          <div className="container mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+                Extras
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
+                Additional Services
+              </h2>
+            </motion.div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[
-                { name: "Additional Outfits", price: "₦10,000/each" },
-                { name: "Milk Bath Setup", price: "₦25,000" },
-                { name: "Floral Crown/Props", price: "₦15,000" },
-                { name: "Rush Editing", price: "₦30,000" },
-              ].map((addon) => (
-                <div
+                { name: "Professional Makeup", price: "₦15,000", desc: "Full glam maternity look" },
+                { name: "Partner Outfit", price: "₦5,000", desc: "Matching outfit for partner" },
+                { name: "Extra Images", price: "₦3,000", desc: "Per additional edited image" },
+                { name: "Video Clip", price: "₦20,000", desc: "Short cinematic bump video" },
+              ].map((addon, index) => (
+                <motion.div
                   key={addon.name}
-                  className="bg-card p-6 rounded-lg text-center shadow-soft"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="bg-card rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow"
                 >
-                  <p className="font-medium text-foreground mb-1">
-                    {addon.name}
-                  </p>
-                  <p className="text-sm text-muted-foreground">{addon.price}</p>
-                </div>
+                  <h3 className="font-serif font-bold text-foreground mb-1">{addon.name}</h3>
+                  <p className="text-2xl font-serif font-bold text-accent mb-2">{addon.price}</p>
+                  <p className="text-sm text-muted-foreground">{addon.desc}</p>
+                </motion.div>
               ))}
             </div>
-            <div className="text-center mt-12">
-              <div className="flex flex-wrap justify-center gap-4">
-                <Button asChild variant="outline">
-                  <Link to="/pricing/studio">Studio Pricing</Link>
-                </Button>
-                <Button asChild variant="outline">
-                  <Link to="/pricing/outdoor">Outdoor Pricing</Link>
-                </Button>
-              </div>
+          </div>
+        </section>
+
+        {/* Other Pricing Options */}
+        <section className="py-16 bg-cream-dark">
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="text-2xl font-serif font-bold text-foreground mb-6">
+              Explore Other Packages
+            </h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild variant="outline">
+                <Link to="/pricing/studio">Studio Pricing</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/pricing/outdoor">Outdoor Pricing</Link>
+              </Button>
             </div>
           </div>
         </section>
