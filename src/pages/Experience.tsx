@@ -3,15 +3,15 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Camera, Heart, Clock, Award, Users, Sparkles } from "lucide-react";
 
-import hero3 from "@/assets/hero-3.jpg";
-import photographerImg from "@/assets/photographer.jpg";
+import hero3 from "./gallery/gallery-images/experience.jpeg";
+import photographerImg from "./pages-images/about-us.jpg";
 
 const experiences = [
   {
     icon: Camera,
     title: "Professional Equipment",
     description:
-      "We use top-of-the-line Canon and Sony cameras with premium lenses to ensure every shot is crystal clear.",
+      "📸.We use top-of-the-line Canon and Nikon cameras with premium lenses to ensure every shot is crystal clear.",
   },
   {
     icon: Heart,
@@ -29,7 +29,7 @@ const experiences = [
     icon: Award,
     title: "Award-Winning Quality",
     description:
-      "Recognized for excellence in portrait and wedding photography across Nigeria.",
+      "🥇 Recognized for excellence in portrait and Children photography across Nigeria.",
   },
   {
     icon: Users,

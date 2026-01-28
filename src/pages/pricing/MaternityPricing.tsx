@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Check, Heart } from "lucide-react";
 
-import gallery3 from "../pages-images/maternity-image.jpg";
+import gallery3 from "../gallery/gallery-images/maternity.jpeg";
 
 interface PricingPackage {
   name: string;
@@ -65,7 +65,7 @@ const MaternityPricing = () => {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
           <div
-            className="absolute inset-0 bg-contain bg-center"
+            className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${gallery3})` }}
           />
           <div className="absolute inset-0 hero-gradient" />
@@ -190,10 +190,10 @@ const MaternityPricing = () => {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[
-                { name: "Professional Makeup", price: "₦15,000", desc: "Full glam maternity look" },
-                { name: "Partner Outfit", price: "₦5,000", desc: "Matching outfit for partner" },
-                { name: "Extra Images", price: "₦3,000", desc: "Per additional edited image" },
-                { name: "Video Clip", price: "₦20,000", desc: "Short cinematic bump video" },
+                { name: "Professional Makeup", price: "₦30,000", desc: "Full glam maternity look" },
+                { name: "Partner Outfit", price: "₦10,000", desc: "Matching outfit for partner" },
+                { name: "Extra Images", price: "₦5,000", desc: "Per additional edited image" },
+                { name: "Video Clip", price: "₦30,000", desc: "Short cinematic bump video" },
               ].map((addon, index) => (
                 <motion.div
                   key={addon.name}
