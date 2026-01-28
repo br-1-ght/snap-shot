@@ -5,10 +5,10 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircleCodeIcon, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-import hero2 from "@/assets/hero-2.jpg";
+import hero2 from "./gallery/gallery-images/contact.jpeg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -91,7 +91,7 @@ const Contact = () => {
                         Studio Location
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        Lagos, Nigeria
+                        4,Emmanuel Arefe, Lagos, Nigeria
                       </p>
                     </div>
                   </div>
@@ -119,7 +119,20 @@ const Contact = () => {
                         Email
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        hello@AbisolaShotit.com
+                        avisualsaav@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <MessageCircleCodeIcon className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">
+                        WhatsApp
+                      </h4>
+                      <p className="text-muted-foreground text-sm">
+                        08101379235
                       </p>
                     </div>
                   </div>

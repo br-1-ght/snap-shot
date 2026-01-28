@@ -102,10 +102,10 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
-                { number: "500+", label: "Happy Clients" },
+                { number: "200+", label: "Happy Clients" },
                 { number: "1000+", label: "Photos Delivered" },
-                { number: "10+", label: "Years Experience" },
-                { number: "50+", label: "Awards Won" },
+                { number: "5+", label: "Years Experience" },
+                { number: "5+", label: "Awards Won" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}

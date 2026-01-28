@@ -162,7 +162,7 @@ const OutdoorPricing = () => {
               {[
                 { name: "Extra Outfit", price: "₦5,000", desc: "Per additional outfit change" },
                 { name: "Rush Editing", price: "₦10,000", desc: "48-hour delivery" },
-                { name: "Extra Images", price: "₦3,000", desc: "Per additional edited image" },
+                { name: "Extra Images", price: "₦5,000", desc: "Per additional edited image" },
                 { name: "Print Package", price: "₦15,000", desc: "5 premium 8x10 prints" },
               ].map((addon, index) => (
                 <motion.div
