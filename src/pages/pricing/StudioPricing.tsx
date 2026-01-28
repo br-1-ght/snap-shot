@@ -51,7 +51,7 @@ const packages: PricingPackage[] = [
       price: "₦50,000",
       duration: "2 Hour Session",
       features: [
-        "5 Edited Digital Images (soft copy)",
+        "5 Edited Digital Images",
         "2 Outfit Changes",
         "Advanced Retouching",
         "Online Gallery Access",
@@ -61,7 +61,7 @@ const packages: PricingPackage[] = [
       price: "₦50,000",
       duration: "2 Hour Session",
       features: [
-        "6 Edited Digital Images (soft copy)",
+        "6 Edited Digital Images",
         "2 Outfit Changes",
         "Comes with kiddies props",
         "Advanced Retouching",
@@ -76,7 +76,7 @@ const packages: PricingPackage[] = [
       price: "₦100,000",
       duration: "2 Hour Session",
       features: [
-        "10 Edited Digital Images (soft copy)",
+        "10 Edited Digital Images",
         "3 Outfit Changes",
         "Advanced Retouching",
         "Online Gallery Access",
@@ -87,7 +87,7 @@ const packages: PricingPackage[] = [
       price: "₦120,000",
       duration: "3 Hour Session",
       features: [
-        "10 Edited Digital Images (soft copy)",
+        "10 Edited Digital Images",
         "3 Outfit Changes",
         "Advanced Retouching",
         "Comes with kiddies props and decorations",

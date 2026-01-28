@@ -32,7 +32,7 @@ const packages: PricingPackage[] = [
     price: "₦80,000",
     duration: "2 Hour Session",
     features: [
-      "6 Edited Digital Images (soft copy)",
+      "6 Edited Digital Images",
       "2 Outfit Changes",
       "Advanced Retouching",
       "Online Gallery Access",
@@ -44,7 +44,7 @@ const packages: PricingPackage[] = [
     price: "₦150,000",
     duration: "3 Hour Session",
     features: [
-      "10 Edited Digital Images (soft copy)",
+      "10 Edited Digital Images",
       "3 Outfit Changes",
       "Advanced Retouching",
       "Online Gallery Access",
