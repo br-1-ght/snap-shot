@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Twitter, Mail } from "lucide-react";
+import { Instagram, Facebook, } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -57,22 +57,28 @@ const Footer = () => {
             </h4>
             <div className="flex gap-4 mb-4">
               <a
-                href="#"
+                href="https://www.instagram.com/abisola_shotit?igsh=MXd5YXl6b3B6MWw="
                 className="w-10 h-10 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground/10 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/1HdypgtDVu/"
                 className="w-10 h-10 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground/10 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://wa.me/qr/6C7SYH2FZF3YE1"
                 className="w-10 h-10 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground/10 transition-colors"
               >
-                <Mail className="w-5 h-5" />
+                <i className="bi bi-whatsapp"/>
+              </a>
+              <a
+                href="https://www.tiktok.com/@abisola_shotit?_r=1&_t=ZS-93PthQgwsky"
+                className="w-10 h-10 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground/10 transition-colors"
+              >
+                <i className="bi bi-tiktok"></i>
               </a>
             </div>
             <p className="text-primary-foreground/80 text-sm">
