@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Star } from "lucide-react";
 
-import hero2 from "@/assets/hero-2.jpg";
+import hero2 from "./testimonials-images/testimonials-hero-image.jpeg";
 import gallery1 from "./testimonials-images/testimonials-1.jpeg";
 import gallery2 from "./testimonials-images/testimonials-2.jpeg";
 import gallery4 from "./testimonials-images/testimonials-3.jpeg";
@@ -28,14 +28,14 @@ const testimonials: Testimonial[] = [
     text: `Working with Abisola Akinsola Shotit was one of the best decisions we made for our wedding. Her professionalism, creativity, and calm presence made the entire day stress-free. She paid attention to every detail and captured our love story so naturally and elegantly. The final images exceeded our expectations — timeless, emotional, and absolutely beautiful. I highly recommend her to anyone looking for a passionate and talented wedding photographer.`,
   },
   {
-    name: "Mr Akinsola",
+    name: "Mr Akinola",
     role: "Corporate Client",
     image: gallery2,
     rating: 5,
     text: "The professionalism, creativity, and calm energy during the shoot made all the difference. The final photos captured exactly what I envisioned—and more.",
   },
   {
-    name: "Sybill &  Tunde",
+    name: "Sybill  & Leke",
     role: "Couple",
     image: gallery4,
     rating: 5,

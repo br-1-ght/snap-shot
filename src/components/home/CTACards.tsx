@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 // Import CTA images - replace with your own
-import aboutHero from "./photo-studio.jpg";
+import aboutHero from "./studio-image-2.jpeg";
 import portfolioHero from "@/assets/portfolio-hero.jpg";
 
 interface CTACardProps {

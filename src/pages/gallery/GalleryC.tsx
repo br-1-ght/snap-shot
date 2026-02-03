@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 // Import images - replace with your own
 import gallery2 from "./gallery-images/fashion.jpeg";
 import gallery5 from "./gallery-images/fashion-2.jpeg";
-// import gallery9 from "@/assets/gallery-9.jpg";
+import gallery9 from "./gallery-images/events.jpeg";
 // import hero3 from "@/assets/hero-3.jpg";
 // import gallery7 from "@/assets/gallery-7.jpg";
 // import gallery8 from "@/assets/gallery-8.jpg";
@@ -16,7 +16,7 @@ import gallery5 from "./gallery-images/fashion-2.jpeg";
 const fashionPhotos = [
   // { src: hero3, alt: "Fashion 1" },
   { src: gallery2, alt: "Fashion 2" },
-  // { src: gallery9, alt: "Fashion 3" },
+  { src: gallery9, alt: "Fashion 3" },
   { src: gallery5, alt: "Fashion 4" },
   // { src: gallery7, alt: "Fashion 5" },
   // { src: gallery8, alt: "Fashion 6" },

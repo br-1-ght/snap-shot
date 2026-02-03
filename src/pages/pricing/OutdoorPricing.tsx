@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
-import hero2 from "../pages-images/outdoor-image.webp";
+import hero2 from "../pages-images/outdoor-image.jpeg";
 
 interface PricingPackage {
   name: string;

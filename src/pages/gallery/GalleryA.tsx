@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 
 // Import images - replace with your own
 import gallery1 from "./gallery-images/Portrait.jpeg";
-// import gallery2 from "@/assets/gallery-2.jpg";
-// import gallery3 from "@/assets/gallery-3.jpg";
+import gallery2 from "./gallery-images/portrait-2.jpeg";
+import gallery3 from "./gallery-images/portrait-3.jpeg";
 // import gallery5 from "@/assets/gallery-5.jpg";
 // import gallery7 from "@/assets/gallery-7.jpg";
 // import gallery8 from "@/assets/gallery-8.jpg";
@@ -16,8 +16,8 @@ import hero1 from "@/assets/hero-1.jpg";
 // Replace with your portrait images
 const portraits = [
   { src: gallery1, alt: "Portrait 1" },
-  // { src: gallery2, alt: "Portrait 2" },
-  // { src: gallery5, alt: "Portrait 3" },
+  { src: gallery2, alt: "Portrait 2" },
+  { src: gallery3, alt: "Portrait 3" },
   // { src: gallery7, alt: "Portrait 4" },
   // { src: gallery8, alt: "Portrait 5" },
   // { src: gallery3, alt: "Portrait 6" },

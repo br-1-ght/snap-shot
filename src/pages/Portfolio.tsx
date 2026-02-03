@@ -10,10 +10,10 @@ import gallery2 from "./gallery/gallery-images/family.jpeg";
 import gallery3 from "./gallery/gallery-images/fashion-2.jpeg";
 import gallery4 from "./gallery/gallery-images/fashion.jpeg";
 import gallery5 from "./gallery/gallery-images/wedding.jpeg";
-// import gallery6 from "@/assets/gallery-6.jpg";
-// import gallery7 from "@/assets/gallery-7.jpg";
-// import gallery8 from "@/assets/gallery-8.jpg";
-// import gallery9 from "@/assets/gallery-9.jpg";
+import gallery6 from "./testimonials-images/testimonials-hero-image.jpeg";
+import gallery7 from "./gallery/gallery-images/wedding-3.jpeg";
+import gallery8 from "./gallery/gallery-images/portrait-2.jpeg";
+import gallery9 from "./gallery/gallery-images/fashion-3.jpeg";
 import portfolioHero from "@/assets/portfolio-hero.jpg";
 
 type Category = "all" | "portrait" | "wedding" | "fashion" | "events";
@@ -31,10 +31,10 @@ const galleryItems: GalleryItem[] = [
   { src: gallery3, alt: "Fashion photography", category: "fashion" },
   { src: gallery4, alt: "Fashion photography", category: "fashion" },
   { src: gallery5, alt: "Wedding photography", category: "wedding" },
-  // { src: gallery6, alt: "Family photography", category: "events" },
-  // { src: gallery7, alt: "Event photography", category: "events" },
-  // { src: gallery8, alt: "Corporate headshot", category: "portrait" },
-  // { src: gallery9, alt: "Artistic portrait", category: "fashion" },
+  { src: gallery6, alt: "Couples photography", category: "events" },
+  { src: gallery7, alt: "wedding photography", category: "wedding" },
+  { src: gallery8, alt: "Corporate headshot", category: "portrait" },
+  { src: gallery9, alt: "Artistic portrait", category: "fashion" },
 ];
 
 const categories: { value: Category; label: string }[] = [

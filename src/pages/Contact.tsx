@@ -91,7 +91,7 @@ const Contact = () => {
                         Studio Location
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        4,Emmanuel Arefe, Lagos, Nigeria
+                        4,Ennanuel Arefe, Lagos, Nigeria
                       </p>
                     </div>
                   </div>

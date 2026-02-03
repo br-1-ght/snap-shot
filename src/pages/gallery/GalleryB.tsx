@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 // Import images - replace with your own
-import gallery4 from "./gallery-images/wedding.jpeg";
+import gallery4 from "../testimonials-images/testimonials-hero-image.jpeg";
 import gallery6 from "./gallery-images/family.jpeg";
-import hero2 from "@/assets/hero-2.jpg";
-// import gallery1 from "@/assets/gallery-1.jpg";
+import gallery1 from "./gallery-images/wedding-3.jpeg";
 // import gallery3 from "@/assets/gallery-3.jpg";
 // import gallery5 from "@/assets/gallery-5.jpg";
 
@@ -18,7 +17,7 @@ const weddingPhotos = [
   // { src: gallery4, alt: "Couple 1" },
   { src: gallery6, alt: "Family 1" },
   // { src: gallery3, alt: "Wedding 2" },
-  // { src: gallery1, alt: "Couple 2" },
+  { src: gallery1, alt: "Couple 2" },
   // { src: gallery5, alt: "Wedding 3" },
 ];
 

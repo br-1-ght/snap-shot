@@ -72,12 +72,6 @@ const Footer = () => {
                 href="#"
                 className="w-10 h-10 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground/10 transition-colors"
               >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full border border-primary-foreground/30 flex items-center justify-center hover:bg-primary-foreground/10 transition-colors"
-              >
                 <Mail className="w-5 h-5" />
               </a>
             </div>

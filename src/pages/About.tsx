@@ -4,8 +4,8 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 
 // Import images - replace with your own
-import photographerImg from "./pages-images/about-us.jpg";
-import aboutHero from "../components/home/photo-studio.jpg";
+import photographerImg from "../components/home/studio-image-2.jpeg";
+import aboutHero from "./pages-images/studio-image.jpeg";
 
 const About = () => {
   return (
@@ -15,7 +15,7 @@ const About = () => {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
           <div
-            className="absolute inset-0 bg-contain bg-center"
+            className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${aboutHero})` }}
           />
           <div className="absolute inset-0 hero-gradient" />
