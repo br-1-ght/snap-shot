@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 // Import CTA images - replace with your own
 import aboutHero from "./studio-image-2.jpeg";
-import portfolioHero from "@/assets/portfolio-hero.jpg";
+import portfolioHero from "./portfolio_images/portfolio-hero.jpeg";
 
 interface CTACardProps {
   image: string;

@@ -14,7 +14,7 @@ import gallery6 from "./testimonials-images/testimonials-hero-image.jpeg";
 import gallery7 from "./gallery/gallery-images/wedding-3.jpeg";
 import gallery8 from "./gallery/gallery-images/portrait-2.jpeg";
 import gallery9 from "./gallery/gallery-images/fashion-3.jpeg";
-import portfolioHero from "@/assets/portfolio-hero.jpg";
+import portfolioHero from "./pages-images/portfolio-hero.jpeg";
 
 type Category = "all" | "portrait" | "wedding" | "fashion" | "events";
 
