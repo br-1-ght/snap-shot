@@ -5,10 +5,11 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, MessageCircleCodeIcon, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-import hero2 from "./gallery/gallery-images/contact.jpeg";
+import hero2 from "@/assets/hero-2.jpg";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -37,6 +38,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Contact BeatSnapShots | Book a Photography Session"
+        description="Get in touch with BeatSnapShots for portrait, wedding, and fashion photography in Lagos. Book your session today via phone, email, or WhatsApp."
+        keywords="contact photographer Lagos, book photography session, BeatSnapShots contact, Lagos photography booking"
+        canonical="https://beatsnapshots.com/contact"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
@@ -91,7 +98,7 @@ const Contact = () => {
                         Studio Location
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        4,Ennanuel Arefe, Lagos, Nigeria
+                        Lagos, Nigeria
                       </p>
                     </div>
                   </div>
@@ -105,7 +112,7 @@ const Contact = () => {
                         Phone
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        +234 810 137 9235
+                        +234 813 822 0519
                       </p>
                     </div>
                   </div>
@@ -119,20 +126,7 @@ const Contact = () => {
                         Email
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        avisualsaav@gmail.com
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <MessageCircleCodeIcon className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">
-                        WhatsApp
-                      </h4>
-                      <p className="text-muted-foreground text-sm">
-                        08101379235
+                        hello@beatsnapshots.com
                       </p>
                     </div>
                   </div>

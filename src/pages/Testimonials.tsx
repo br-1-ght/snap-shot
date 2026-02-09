@@ -3,12 +3,13 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Star } from "lucide-react";
 
-import hero2 from "./testimonials-images/testimonials-hero-image.jpeg";
-import gallery1 from "./testimonials-images/testimonials-1.jpeg";
-import gallery2 from "./testimonials-images/testimonials-2.jpeg";
-import gallery4 from "./testimonials-images/testimonials-3.jpeg";
-import gallery6 from "./testimonials-images/testimonials-4.jpeg";
-import gallery8 from "./testimonials-images/testimonials-5.jpeg";
+import hero2 from "@/assets/hero-2.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
+import gallery8 from "@/assets/gallery-8.jpg";
+import SEO from "@/components/SEO";
 
 interface Testimonial {
   name: string;
@@ -21,45 +22,51 @@ interface Testimonial {
 // Replace with your actual testimonials
 const testimonials: Testimonial[] = [
   {
-    name: "Ajoke Saliu",
+    name: "Adaeze Okonkwo",
     role: "Bride",
     image: gallery1,
     rating: 5,
-    text: `Working with Abisola Akinsola Shotit was one of the best decisions we made for our wedding. Her professionalism, creativity, and calm presence made the entire day stress-free. She paid attention to every detail and captured our love story so naturally and elegantly. The final images exceeded our expectations — timeless, emotional, and absolutely beautiful. I highly recommend her to anyone looking for a passionate and talented wedding photographer.`,
+    text: "Otega captured our wedding day perfectly! Every emotion, every detail was documented beautifully. We couldn't have asked for a better photographer. The photos are absolutely stunning!",
   },
   {
-    name: "Mr Akinola",
+    name: "Chidi Emenike",
     role: "Corporate Client",
-    image: gallery2,
+    image: gallery8,
     rating: 5,
-    text: "The professionalism, creativity, and calm energy during the shoot made all the difference. The final photos captured exactly what I envisioned—and more.",
+    text: "Professional, punctual, and incredibly talented. The headshots for our company exceeded all expectations. Highly recommend BeatSnapShots for any corporate photography needs.",
   },
   {
-    name: "Sybill  & Leke",
+    name: "Funke & Tunde",
     role: "Couple",
     image: gallery4,
     rating: 5,
-    text: "Our pre-wedding and Traditional wedding photos turned out amazing! Abisola Akinsola Shotit made us  feel so comfortable during the shoot.The final images were beyond our expectations.",
+    text: "Our engagement photos turned out amazing! Otega made us feel so comfortable during the shoot. The final images were beyond our expectations.",
   },
   {
-    name: "Adenike Akinola",
+    name: "Amara Johnson",
     role: "Fashion Model",
+    image: gallery2,
+    rating: 5,
+    text: "Working with BeatSnapShots was an incredible experience. The attention to lighting and angles really brought out the best in every shot. A true artist!",
+  },
+  {
+    name: "The Adeyemi Family",
+    role: "Family Portrait",
     image: gallery6,
     rating: 5,
-    text: "Working with Abisola Akinsola Shotit was incredible experience The attention to lighting and angles really brought out the beat on every shot.A true artist!",
-  },
-  {
-    name: "The Akinbile family",
-    role: "Family Portrait",
-    image: gallery8,
-    rating: 5,
-    text: "We've been coming back for a family portraits for 2years now.Each session feels fresh and memories captured are priceless.Thank you for preserving our family moments!",
+    text: "We've been coming back for family portraits for 3 years now. Each session feels fresh and the memories captured are priceless. Thank you for preserving our family moments!",
   },
 ];
 
 const Testimonials = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Client Testimonials | BeatSnapShots Photography"
+        description="Read what our clients say about BeatSnapShots photography services. Trusted by hundreds of happy clients for weddings, portraits, and events in Lagos."
+        keywords="BeatSnapShots reviews, photography testimonials Lagos, wedding photographer reviews Nigeria"
+        canonical="https://beatsnapshots.com/testimonials"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
@@ -146,7 +153,7 @@ const Testimonials = () => {
               Join hundreds of satisfied clients
             </p>
             <a
-              href="https://wa.me/2348101379235"
+              href="https://wa.me/2348138220519"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-cream text-navy px-8 py-3 rounded-md font-semibold uppercase tracking-wider hover:bg-cream/90 transition-colors"

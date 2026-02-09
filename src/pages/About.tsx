@@ -4,12 +4,19 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 
 // Import images - replace with your own
-import photographerImg from "../components/home/studio-image-2.jpeg";
-import aboutHero from "./pages-images/studio-image.jpeg";
+import photographerImg from "@/assets/photographer.jpg";
+import aboutHero from "@/assets/about-hero.jpg";
+import SEO from "@/components/SEO";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="About BeatSnapShots | Professional Photographer Lagos"
+        description="Meet the photographer behind BeatSnapShots. Over a decade of experience in portrait, wedding, and fashion photography in Lagos, Nigeria."
+        keywords="about BeatSnapShots, Lagos photographer, portrait photographer Nigeria, wedding photographer Lagos"
+        canonical="https://beatsnapshots.com/about"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
@@ -85,7 +92,7 @@ const About = () => {
                 </p>
                 <Button asChild variant="outline" size="lg">
                   <a
-                    href="https://wa.me/2348101379235"
+                    href="https://wa.me/2348138220519"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -102,10 +109,10 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
-                { number: "200+", label: "Happy Clients" },
+                { number: "500+", label: "Happy Clients" },
                 { number: "1000+", label: "Photos Delivered" },
-                { number: "5+", label: "Years Experience" },
-                { number: "5+", label: "Awards Won" },
+                { number: "10+", label: "Years Experience" },
+                { number: "50+", label: "Awards Won" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}

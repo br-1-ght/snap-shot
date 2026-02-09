@@ -3,15 +3,16 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Camera, Heart, Clock, Award, Users, Sparkles } from "lucide-react";
 
-import hero3 from "./gallery/gallery-images/experience.jpeg";
-import photographerImg from "./pages-images/about-us.jpg";
+import hero3 from "@/assets/hero-3.jpg";
+import photographerImg from "@/assets/photographer.jpg";
+import SEO from "@/components/SEO";
 
 const experiences = [
   {
     icon: Camera,
     title: "Professional Equipment",
     description:
-      "📸.We use top-of-the-line Canon and Nikon cameras with premium lenses to ensure every shot is crystal clear.",
+      "We use top-of-the-line Canon and Sony cameras with premium lenses to ensure every shot is crystal clear.",
   },
   {
     icon: Heart,
@@ -29,7 +30,7 @@ const experiences = [
     icon: Award,
     title: "Award-Winning Quality",
     description:
-      "🥇 Recognized for excellence in portrait and Children photography across Nigeria.",
+      "Recognized for excellence in portrait and wedding photography across Nigeria.",
   },
   {
     icon: Users,
@@ -75,6 +76,12 @@ const processSteps = [
 const Experience = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="The BeatSnapShots Experience | What to Expect"
+        description="Discover what makes a BeatSnapShots photography session special. From consultation to delivery, learn about our process, equipment, and personalized approach."
+        keywords="photography experience Lagos, BeatSnapShots process, professional photo session Nigeria, photography consultation"
+        canonical="https://beatsnapshots.com/experience"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
