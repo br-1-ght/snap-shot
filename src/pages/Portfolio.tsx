@@ -5,15 +5,15 @@ import Footer from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
 
 // Import gallery images - replace with your own
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
-import gallery8 from "@/assets/gallery-8.jpg";
-import gallery9 from "@/assets/gallery-9.jpg";
+import gallery1 from "./gallery/gallery-images/Portrait.jpeg";
+import gallery2 from "./gallery/gallery-images/fashion.jpeg";
+import gallery3 from "./gallery/gallery-images/portrait-2.jpeg";
+import gallery4 from "./gallery/gallery-images/wedding.jpeg";
+import gallery5 from "./gallery/gallery-images/portrait-3.jpeg";
+import gallery6 from "./gallery/gallery-images/events.jpeg";
+import gallery7 from "./gallery/gallery-images/family.jpeg";
+import gallery8 from "./gallery/gallery-images/fashion-2.jpeg";
+import gallery9 from "./gallery/gallery-images/fashion-3.jpeg";
 import portfolioHero from "@/assets/portfolio-hero.jpg";
 import SEO from "@/components/SEO";
 
