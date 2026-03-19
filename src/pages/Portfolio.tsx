@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import gallery1 from "./gallery/gallery-images/Portrait.jpeg";
 import gallery2 from "./gallery/gallery-images/fashion.jpeg";
 import gallery3 from "./gallery/gallery-images/portrait-2.jpeg";
-import gallery4 from "./gallery/gallery-images/wedding.jpeg";
+import gallery4 from "./gallery/gallery-images/wedding-3.jpeg";
 import gallery5 from "./gallery/gallery-images/portrait-3.jpeg";
 import gallery6 from "./gallery/gallery-images/events.jpeg";
 import gallery7 from "./gallery/gallery-images/family.jpeg";
